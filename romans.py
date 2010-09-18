@@ -28,48 +28,53 @@ class RomanTest(unittest.TestCase):
 def number2roman(number):
 	number = str(number)
 	
+	final =""
+	
+	
 	caracter = number[-1]
 	
 	if caracter == '1':
-		return "I"
+		 final = "I"
 	elif caracter == "2":
-		return "II"
+		final = "II"
 	elif caracter == "3":
-		return "III"
+		final ="III"
 	elif caracter == "4":
-		return "IV"
+		final ="IV"
 	elif caracter == "5":
-		return "V"
+		final ="V"
 	elif caracter == "6":
-		return "VI"
+		final ="VI"
 	elif caracter == "7":
-		return "VII"
+		final ="VII"
 	elif caracter == "8":
-		return "VIII"
+		final ="VIII"
 	elif caracter == "9":
-		return "IX"	
+		final ="IX"	
 	
 	if len(number) > 1:
 		caracter2 = number[-2]
 	
 		if caracter == '1':
-			return "X"
+			final = "X" + final
 		elif caracter == "2":
-			return "XX"
+			final = "XX" + final
 		elif caracter == "3":
-			return "XX"
+			final = "XX" + final
 		elif caracter == "4":
-			return "XL"
+			final = "XL" + final
 		elif caracter == "5":
-			return "L"
+			final = "L" + final
 		elif caracter == "6":
-			return "LX"
+			final = "LX" + final
 		elif caracter == "7":
-			return "LXX"
+			final = "LXX" + final
 		elif caracter == "8":
-			return "LXXX"
+			final = "LXXX" + final
 		elif caracter == "9":
-			return "XC"
+			final = "XC" + final
+			
+	return final	
 	
 	
 						
