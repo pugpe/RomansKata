@@ -26,16 +26,38 @@ class RomanTest(unittest.TestCase):
 
 
 def number2roman(number):
-	if number % 5 == 0:
-		return 'V'
-	if number % 5 == 1:
-		return 'I'
-	if number % 5 == 2:
-		return 'II'	
-	if number % 5 == 3:
-		return 'III'
-	if number % 5 == 4:
-		return 'IV'					
+	number = str(number)
+	
+	caracter = number[-1]
+	
+	if caracter == '1':
+		return "I"
+	elif caracter == "2":
+		return "II"
+	elif caracter == "3":
+		return "III"
+	elif caracter == "4":
+		return "IV"
+	elif caracter == "5":
+		return "V"
+	elif caracter == "6":
+		return "VI"
+	elif caracter == "7":
+		return "VII"
+	elif caracter == "8":
+		return "VIII"
+	elif caracter == "9":
+		return "IX"
+	elif caracter == "10":
+		return "X"
+	
+	 	 
+	
+	
+	
+	
+	
+						
 if __name__ == '__main__':
 	unittest.main()
 
