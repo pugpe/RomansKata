@@ -13,6 +13,11 @@ class RomanTest(unittest.TestCase):
 		self.assertEqual('II',number2roman(2))
 	def testIII(self):
 		self.assertEqual('III',number2roman(3))
+	def testIV(self):
+		self.assertEqual('IV', number2roman(4))
+	def testV(self):
+		self.assertEqual('V', number2roman(5))
+		
 		
 #==================================
 
