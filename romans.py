@@ -109,7 +109,6 @@ def number2roman(number):
 	number = number - milhar * 1000
 	final = "M" * milhar
 	
-	
 	for temp in [100, 10, 1]:
 		centena = number / temp
 		number = number - centena * (temp)
@@ -118,10 +117,6 @@ def number2roman(number):
 		final += centena
 			
 	return final	
-	
-	
-						
+				
 if __name__ == '__main__':
 	unittest.main()
-
-
