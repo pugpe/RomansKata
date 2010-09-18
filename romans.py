@@ -5,7 +5,10 @@ import unittest
 
 
 class RomanTest(unittest.TestCase):
-	
+
+
+	def test0ShouldReturnNothing(self):
+		self.assertEqual('', number2roman(0))
 	def testI(self):
 		self.assertEqual('I',number2roman(1))
 		
@@ -20,7 +23,11 @@ class RomanTest(unittest.TestCase):
 	def testX(self):
 		self.assertEqual('X', number2roman(10))
 		
-		
+	def testXX(self):
+		self.assertEqual("XX", number2roman(20))
+	def testXV(self):
+		self.assertEqual('XV', number2roman(15))
+
 		
 #==================================
 
@@ -56,7 +63,7 @@ def number2roman(number):
 	 	
 	
 	if len(number) > 1:
-		caracter2 = number[-2]
+		caracter = number[-2]
 	
 		if caracter == '1':
 			final = "X" + final
