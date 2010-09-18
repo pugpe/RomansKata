@@ -50,7 +50,10 @@ def number2roman(number):
 	elif caracter == "8":
 		final ="VIII"
 	elif caracter == "9":
-		final ="IX"	
+		final ="IX"
+	elif caracter == '0':
+		final = ''
+	 	
 	
 	if len(number) > 1:
 		caracter2 = number[-2]
