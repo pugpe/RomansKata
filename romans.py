@@ -11,17 +11,23 @@ class RomanTest(unittest.TestCase):
 		
 	def testII(self):
 		self.assertEqual('II',number2roman(2))
-
-	
+	def testIII(self):
+		self.assertEqual('III',number2roman(3))
+		
 #==================================
 
 
 def number2roman(number):
-	if number == 1:
+	if number % 5 == 0:
+		return 'V'
+	if number % 5 == 1:
 		return 'I'
-	else:
-		return 'II'
-	
+	if number % 5 == 2:
+		return 'II'	
+	if number % 5 == 3:
+		return 'III'
+	if number % 5 == 4:
+		return 'IV'					
 if __name__ == '__main__':
 	unittest.main()
 
