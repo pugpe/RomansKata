@@ -37,6 +37,26 @@ class RomanTest(unittest.TestCase):
 	def testMCMXC(self):
 		self.assertEqual('MCMXC', number2roman(1990))
 
+	def testMXL(self):
+		self.assertEqual('MXL', number2roman(1040))
+
+	def testMCMXCIX(self):
+		self.assertEqual('MCMXCIX', number2roman(1999))	
+			
+	def testMMXII(self):
+		self.assertEqual('MMXII', number2roman(2012))
+
+	def testMCDXLIV(self):
+		self.assertEqual('MCDXLIV', number2roman(1444))	
+		
+	def testMMMCMXCIX(self):
+		self.assertEqual('MMMCMXCIX', number2roman(3999))			
+		
+#def test(self):
+#	self.assertEqual('', number2roman())
+
+	
+
 		
 #==================================
 
