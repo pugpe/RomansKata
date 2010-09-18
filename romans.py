@@ -58,7 +58,10 @@ class RomanTest(unittest.TestCase):
 		self.assertEqual('MMMCMXCIX', number2roman(3999))
 		
 	def testC(self):
-		self.assertEqual('C', number2roman(100))				
+		self.assertEqual('C', number2roman(100))
+	
+	def testL(self):
+		self.assertEqual('L', number2roman(50))				
 		
 #def test(self):
 #	self.assertEqual('', number2roman())
@@ -104,22 +107,17 @@ def number2roman(number):
 	
 	milhar = number / 1000
 	number = number - milhar * 1000
-	milhar = "M" * milhar
+	final = "M" * milhar
 	
+	
+	for i in [2, 1, 0]:
+		temp = 10 ** i
+		centena = number / temp
+		number = number - centena * (temp)
+		centena = romanos[centena * temp]
 		
-	centena = number / 100
-	number = number - centena * 100
-	centena = romanos[centena * 100]
-	
-		
-	dezena = number / 10	
-	number = number - dezena * 10
-	dezena = romanos[dezena * 10]
-	
-	unidade = romanos[number]
-	
-	
-	final = milhar + centena + dezena + unidade		
+		final += centena
+			
 	return final	
 	
 	
