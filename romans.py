@@ -17,8 +17,10 @@ class RomanTest(unittest.TestCase):
 
 
 def number2roman(number):
-	return 'I'
-	
+	if number == 1:
+		return 'I'
+	else:
+		return 'II'
 	
 if __name__ == '__main__':
 	unittest.main()
