@@ -17,6 +17,9 @@ class RomanTest(unittest.TestCase):
 		self.assertEqual('IV', number2roman(4))
 	def testV(self):
 		self.assertEqual('V', number2roman(5))
+	def testX(self):
+		self.assertEqual('X', number2roman(10))
+		
 		
 		
 #==================================
