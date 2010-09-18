@@ -72,9 +72,6 @@ class RomanTest(unittest.TestCase):
 def number2roman(number):
 	
 	romanos = {
-		1000: 'M',
-		2000: 'MM',
-		3000: 'MMM',
 		100: 'C',
 		200: 'CC',
 		300: 'CCC',
@@ -107,7 +104,7 @@ def number2roman(number):
 	
 	milhar = number / 1000
 	number = number - milhar * 1000
-	milhar = romanos[milhar * 1000]
+	milhar = "M" * milhar
 	
 		
 	centena = number / 100
