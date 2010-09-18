@@ -110,8 +110,7 @@ def number2roman(number):
 	final = "M" * milhar
 	
 	
-	for i in [2, 1, 0]:
-		temp = 10 ** i
+	for temp in [100, 10, 1]:
 		centena = number / temp
 		number = number - centena * (temp)
 		centena = romanos[centena * temp]
