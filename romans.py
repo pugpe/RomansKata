@@ -47,14 +47,29 @@ def number2roman(number):
 	elif caracter == "8":
 		return "VIII"
 	elif caracter == "9":
-		return "IX"
-	elif caracter == "10":
-		return "X"
+		return "IX"	
 	
-	 	 
+	if len(number) > 1:
+		caracter2 = number[-2]
 	
-	
-	
+		if caracter == '1':
+			return "X"
+		elif caracter == "2":
+			return "XX"
+		elif caracter == "3":
+			return "XX"
+		elif caracter == "4":
+			return "XL"
+		elif caracter == "5":
+			return "L"
+		elif caracter == "6":
+			return "LX"
+		elif caracter == "7":
+			return "LXX"
+		elif caracter == "8":
+			return "LXXX"
+		elif caracter == "9":
+			return "XC"
 	
 	
 						
