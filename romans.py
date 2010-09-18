@@ -7,7 +7,7 @@ import unittest
 class RomanTest(unittest.TestCase):
 	
 	def testI(self):
-		pass
+		self.assertEqual('I',number2roman(1))
 
 	
 #==================================
