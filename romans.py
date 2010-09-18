@@ -8,6 +8,9 @@ class RomanTest(unittest.TestCase):
 	
 	def testI(self):
 		self.assertEqual('I',number2roman(1))
+		
+	def testII(self):
+		self.assertEqual('II',number2roman(2))
 
 	
 #==================================
